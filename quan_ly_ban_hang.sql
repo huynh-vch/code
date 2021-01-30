@@ -42,4 +42,5 @@ Create table CTHD
 	SOHD		int foreign key references HOADON(SOHD),
 	MASP		char(4) foreign key references SANPHAM(MASP),
 	SL			int
+	constraint PK_CTHD primary key (SOHD,MASP)
 )
