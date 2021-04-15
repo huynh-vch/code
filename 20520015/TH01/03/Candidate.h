@@ -8,15 +8,16 @@ using namespace std;
 class Candidate
 {
 private:
-	char Msv[10];
+	string Msv;
 	string HoTen;
 	float NgaySinh;
 	float DiemToan, DiemVan, DiemAnh;
+	float TongDiem;
 
 public:
 	void Nhap();
-	float TongDiem();
 	void Xuat();
+	float TongDiem();
 	void Tren15();
 };
 
