@@ -23,9 +23,9 @@ void Candidate::Xuat()
 	cout << "\nMa Sinh Vien: " << Msv;
 	cout << "\nHo Ten: " << HoTen;
 	cout << "\nNgay Sinh: " << NgaySinh;
-	cout << "Diem Toan: " << DiemToan;
-	cout << "Diem Van: " << DiemVan;
-	cout << "Diem Anh: " << DiemAnh;
+	cout << "\nDiem Toan: " << DiemToan;
+	cout << "\nDiem Van: " << DiemVan;
+	cout << "\nDiem Anh: " << DiemAnh;
 }
 
 float Candidate::TongDiem()
