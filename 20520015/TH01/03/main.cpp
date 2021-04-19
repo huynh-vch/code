@@ -1,17 +1,19 @@
-#include <iostream>
-#include <string>
 #include "Candidate.h"
-using namespace std;
+#include "TestCandidate.h"
 
 int main()
 {
-	int n;
-	Candidate a[100];
-	cin >> n;
-	for (int i = 1; i <= n; i++)
-		a[i].Nhap();
-	cout << "Diem tren 15: \n";
-	for (int i = 1; i <= n; i++)
-		a[i].Tren15();
-	return 0;
+	//Candidate a, b, c;
+	//a.Nhap();
+	//a.Xuat();
+	//cin.ignore();
+	//b.Nhap();
+	//b.Xuat();
+	TestCandidate s;
+	s.Nhap();
+	cout << "\n---------\nNhap thong tin cac thi sinh: \n";
+	s.Xuat();
+	cout << "\n---------\nCac thi sinh co tong diem lon hon 15: \n";
+	s.XuLy();
+	return 1;
 }
