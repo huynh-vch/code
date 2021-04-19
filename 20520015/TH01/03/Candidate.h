@@ -1,23 +1,22 @@
-#pragma once
-#include <iostream>
-#include <iomanip>
-#include <>
-#include <string>
+﻿#pragma once
+#include "ngay.h"
+#include<iostream>
+#include<string>
+#include<iomanip>
 using namespace std;
 
 class Candidate
 {
 private:
-	string Msv;
 	string HoTen;
-	float NgaySinh;
-	float DiemToan, DiemVan, DiemAnh;
-	float TongDiem;
-
+	string MaSinhVien;
+	Ngay NgaySinh;
+	float MonToan;
+	float MonVan;
+	float MonAnh;
 public:
 	void Nhap();
 	void Xuat();
 	float TongDiem();
-	void Tren15();
 };
 

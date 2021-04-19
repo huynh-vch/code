@@ -1,40 +1,33 @@
 #include "Candidate.h"
 
-using namespace std;
-
 void Candidate::Nhap()
 {
-	cout << "Nhap ma sinh vien: " << endl;
-	fflush(stdin);
-	getline(cin, Msv);
-	cout << "Nhap ho ten sinh vien" << endl;
+	cout << "\nNhap ho ten: ";
 	fflush(stdin);
 	getline(cin, HoTen);
+	cout << "Nhap ma sinh vien: ";
+	fflush(stdin);
+	getline(cin, MaSinhVien);
+	cout << "Nhap ngay sinh: ";
+	NgaySinh.Nhap();
 	cout << "Nhap diem toan: ";
-	cin >> DiemToan;
+	cin >> MonToan;
 	cout << "Nhap diem van: ";
-	cin >> DiemVan;
+	cin >> MonVan;
 	cout << "Nhap diem anh: ";
-	cin >> DiemAnh;
+	cin >> MonAnh >> endl;
 }
-
 void Candidate::Xuat()
 {
-	cout << "\nMa Sinh Vien: " << Msv;
 	cout << "\nHo Ten: " << HoTen;
-	cout << "\nNgay Sinh: " << NgaySinh;
-	cout << "\nDiem Toan: " << DiemToan;
-	cout << "\nDiem Van: " << DiemVan;
-	cout << "\nDiem Anh: " << DiemAnh;
+	cout << "\nMa sinh vien: " << MaSinhVien;
+	cout << "\nNgay Sinh: ";
+	NgaySinh.Xuat();
+	cout << "\nDiem Toan: " << MonToan;
+	cout << "\nDiem Van: " << MonVan;
+	cout << "\nDiem Anh: " << MonAnh;
 }
-
 float Candidate::TongDiem()
 {
-	return  DiemToan + DiemVan + DiemAnh;
-}
-
-void Candidate::Tren15()
-{
-	if (Candidate::TongDiem() > 15)
-		Candidate::Xuat();
+	return MonToan + MonVan + MonAnh;
 }
