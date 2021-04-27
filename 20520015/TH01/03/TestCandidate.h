@@ -1,17 +1,17 @@
 #pragma once
+#include "Candidate.h"
 #include<iostream>
 #include<string>
+#include<iomanip>
 using namespace std;
-
-class candidate
+class TestCandidate
 {
 private:
-	string ma, ten;
-	int ngay, thang, nam;
-	double diemtoan, diemvan, diemanh;
+	int	SoThiSinh;
+	Candidate* thi_sinh;
 public:
 	void Nhap();
 	void Xuat();
-	int Tongdiem();
+	void XuLy();
 };
 
